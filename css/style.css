@@ -11,6 +11,11 @@ html, body
   /* background-image: url("../img/bg.jpg"); */
 }
 
+.navitems
+{
+  margin: auto;
+}
+
 .navbar
 {
   padding: 0.8rem;
@@ -33,11 +38,6 @@ html, body
   margin-bottom: 0;
 }
 
-#rot
-{
-  margin-top: 0;
-}
-
 #ev
 {
   transform: scaleY(-1);
@@ -52,7 +52,7 @@ html, body
 #cntr
 {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
 }
 
@@ -72,17 +72,25 @@ html, body
   padding-bottom: 1rem;
 }
 
+#projects
+{
+  position: relative;
+}
+
 .overlay
 {
-  color:#000000;
+  color:#fff;
   /* background-color: #000000; */
+  position: absolute;
   z-index:12;
-  top:130%;
+  /* top:50%; */
+  margin-top: 2rem;
   bottom: auto;
   left:0;
   width:100%;
   text-align:center;
 }
+
 
 .btn-primary
 {
@@ -157,25 +165,17 @@ html, body
   padding: 3rem;
 }
 
-.fa-facebook
+.fa-linkedin
 {
-  color: #3b5998;
+  color: #2867B2;
 }
-.fa-twitter
+.fa-at
 {
-  color: #00aced;
+  color: #800000;
 }
-.fa-reddit
+.fa-github
 {
-  color: #ff5700;
-}
-.fa-instagram
-{
-  color: #517fa8;
-}
-.fa-youtube
-{
-  color: #bb0000;
+  color: #211f1f;
 }
 
 .fa-facebook:hover, .fa-twitter:hover, .fa-reddit:hover, .fa-instagram:hover, .fa-youtube:hover
