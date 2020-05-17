@@ -12,74 +12,219 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid main">
 
-		<nav class = "navbar navbar-expand-sm navbar-expand-xs navbar-light bg-light sticky-top" id="navbar">
-			<div class="container-fluid">
-				<!-- navbar button -->
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<!-- navbar items -->
-				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto navitems">
-						<li class="nav-item">
-							<a href="#" class="nav-link">About</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link">Projects</a>
-						</li>
-						<!-- <li class="nav-item">
-							<a href="#" class="nav-link">Contact</a>
-						</li> -->
-					</ul>
-				</div>
-			</div>
-		</nav>
+<!-- Navigation -->
+<nav class = "navbar navbar-expand navbar-dark bg-dark sticky-top">
+	<div class="container-fluid">
+		<!-- navbar button -->
+		<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button> -->
+		<!-- navbar items -->
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Projects</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link" id="name">Ramit Shivansh</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
 
-		<div class="row nmimg">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4" id="photo">
-				<img src="img/ramit.JPG">
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
-				<h1 id="name">Ramit</h1>
-				<h1 id="lname">Shivansh</h1>
+
+<!--- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="img/bg_alt2_cropped.jpg">
+			<div class="carousel-caption" id="cntr">
+				<h1 class="display-2">Hi, I am Ramit.</h1>
+				<h3>I am a Computer Science student at BITS Goa trying to learn Web Development.</h3>
 			</div>
 		</div>
+	</div>
+</div>
 
-		<div class="do_shabd">
-			<p>Hi, I am a Computer Science student at BITS Goa learning Web Development.</p>
-		</div>
+<br>
+
+<!--- Projects -->
+<div " id="Projects">
+	
+	<div class="overlay">
+		<h1 class="display-2">Projects</h1>
+	</div>
+
+	<div class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+			<li data-target="#slides" data-slide-to="0" class="active"></li>
+			<li data-target="#slides" data-slide-to="1" class=""></li>
+		</ul>
 		
-		<nav class = "navbar navbar-expand-sm navbar-light bg-light" id="navbar-bottom">
-			<div class="container-fluid">
-				<!-- navbar button -->
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsiveb">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<!-- navbar items -->
-				<div class="collapse navbar-collapse" id="navbarResponsiveb">
-					<ul class="navbar-nav ml-auto navitems social">
-						<li class="nav-item">
-							<a href="https://www.linkedin.com/in/ramit-shivansh" class="nav-link" target="_blank">
-								<i class="fab fa-linkedin"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="https://github.com/RamitShivansh" class="nav-link" target="_blank">
-								<i class="fab fa-github"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="mailto:shivanshramit@gmail.com" class="nav-link" target="_blank">
-								<i class="fas fa-at"></i>
-							</a>
-						</li>
-					</ul>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/bg_alt2_cropped.jpg">
+				<div class="carousel-caption">
+					<h3>Portfolio Website</h3>
+					<p>
+						<button type="button" class="btn btn-primary btn-lg"><i class="fab fa-github"></i></button>
+					</p>
 				</div>
 			</div>
-		</nav>
+
+			<div class="carousel-item" id="rot">
+				<img src="img/bg_alt2_cropped.jpg" id="ev">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+
+		</div>
+	</div>
+</figure>
+
+<!--- Meet the team -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Meet the Team</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid padding">
+	<div class="row padding">
+
+		<div class="col-md-4">
+			<div class="card">
+				<img src="img/team1.png" class="card-img-top">
+				<div class="card-body">
+					<h4 class="card-title">John Doe</h4>
+					<p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, omnis.</p>
+					<a href="#" class="btn btn-outline-secondary">See Profile</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<img src="img/team2.png" class="card-img-top">
+				<div class="card-body">
+					<h4 class="card-title">Mary Jo</h4>
+					<p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, omnis.</p>
+					<a href="#" class="btn btn-outline-secondary">See Profile</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<img src="img/team3.png" class="card-img-top">
+				<div class="card-body">
+					<h4 class="card-title">Chutio</h4>
+					<p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, omnis.</p>
+					<a href="#" class="btn btn-outline-secondary">See Profile</a>
+				</div>
+			</div>
+		</div>
 
 	</div>
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-lg-6">
+			<h2>Our Philosophy</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil veniam soluta iste. Sed, maxime unde?</p>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis tenetur nesciunt modi animi ex velit, exercitationem blanditiis vel iste unde nobis, mollitia officia aliquid repellendus culpa excepturi laudantium inventore consequatur.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, natus.</p>
+			<br>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/bootstrap2.png" class="img-fluid">
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<!--- Connect -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2>Connect</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="#">
+				<i class="fab fa-facebook"></i>
+			</a>
+			<a href="#">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a href="#">
+				<i class="fab fa-reddit"></i>
+			</a>
+			<a href="#">
+				<i class="fab fa-youtube"></i>
+			</a>
+			<a href="#">
+				<i class="fab fa-instagram"></i>
+			</a>
+		</div>
+	</div>
+</div>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img src="img/w3newbie.png">
+				<hr class="light">
+				<p>555-555-5555</p>
+				<p>email@gmail.com</p>
+				<p>Address</p>
+				<p>City of Stars</p>
+			</div>
+
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Our hours</h5>
+				<hr class="light">
+				<p>Monday : 9 - 17</p>
+				<p>Saturday : 10 - 16</p>
+				<p>Sunday : closed</p>
+			</div>
+
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Services</h5>
+				<hr class="light">
+				<p>baklol</p>
+				<p>chutzpa</p>
+				<p>fuck this shit</p>
+				<p>nigga</p>
+			</div>
+
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; laudalassan</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
 </body>
 </html>
