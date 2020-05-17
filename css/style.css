@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 html, body
 {
@@ -11,6 +12,13 @@ html, body
   /* background-image: url("../img/bg.jpg"); */
 }
 
+#name
+{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem !important;
+  padding: 0.5rem 1rem !important;
+}
+
 .navitems
 {
   margin: auto;
@@ -19,23 +27,21 @@ html, body
 .navbar
 {
   padding: 0.8rem;
+  z-index: 24;
 }
 
 .navbar-nav li
 {
-  padding-right: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .nav-link
 {
-  font-size: 1.1em !important;
-}
-
-#about
-{
-  background-image: url("../img/about_bg.jpg");
-  background-size: auto;
-  margin-bottom: 0;
+  font-size: 1.1em;
 }
 
 #ev
@@ -52,14 +58,13 @@ html, body
 #cntr
 {
   position: absolute;
-  top: 60%;
+  top: 55%;
   transform: translateY(-50%);
 }
 
 .carousel-caption h1
 {
   font-size: 500%;
-  text-transform: uppercase;
   text-shadow: 1px 1px 15px #000000;
   position: relative !important;
 }
@@ -69,7 +74,15 @@ html, body
   font-size: 200%;
   font-weight: 500;
   text-shadow: 1px 1px 10px #000000;
-  padding-bottom: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.carousel-caption img
+{
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
 }
 
 #projects
@@ -91,72 +104,22 @@ html, body
   text-align:center;
 }
 
-
-.btn-primary
-{
-  background-color: #6648b1;
-  border: 1px solid #6648b1;
-}
-.btn-primary:hover
-{
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
-}
-
-.jumbotron
-{
-  padding: 1rem;
-  border-radius: 0;
-}
-
 .padding
 {
   padding-bottom: 2rem;
 }
 
-.welcome
+.icdiv
 {
-  width: 75%;
-  margin: 0 auto;
-  padding-top: 2rem;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
 }
 
-.welcome hr
+.fa-code, .bi-bootstrap, .fa-css3
 {
-  border-top: 2px solid #b4b4b4;
-  width: 95%;
-  margin-top: 0.01rem;
-  margin-bottom: 1rem;
-}
-
-.fa-code
-{
-  color: #e54d26;
-}
-.fa-bold
-{
-  color: #563d76;
-}
-.fa-css3
-{
-  color: #2163af;
-}
-
-.fa-code, .fa-bold, .fa-css3
-{
-  font-size: 4em;
-  margin: 1rem;
-}
-
-.fun
-{
-  width: 100%;
-  margin-bottom: 2rem;
-}
-
-.gif
-{
-  max-width: 100%;
+  font-size: 2em;
+  margin: 1em;
 }
 
 .social a
@@ -178,34 +141,9 @@ html, body
   color: #211f1f;
 }
 
-.fa-facebook:hover, .fa-twitter:hover, .fa-reddit:hover, .fa-instagram:hover, .fa-youtube:hover
+.fa-linkedin:hover, .fa-at:hover, .fa-github:hover
 {
   color: #d5d5d5;
-}
-
-footer
-{
-  background-color: #3f3f3f;
-  color: #d5d5d5;
-  padding-top: 2rem;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-hr.light
-{
-  border-top: 1px solid #d5d5d5;
-  width: 75%;
-  margin-top: 0.8rem;
-  margin-bottom: 1rem;
-}
-
-hr.light-100
-{
-  border-top: 1px solid #d5d5d5;
-  width: 100%;
-  margin-top: 0.8rem;
-  margin-bottom: 1rem;
 }
 
 /*---Media Queries --*/
@@ -217,82 +155,138 @@ hr.light-100
   }
 }
 @media (max-width: 768px) {
-  .carousel-caption
+  #name
   {
-    top: 45%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.25rem !important;
+    padding: 0.1rem 0.5rem !important;
   }
 
-  .carousel-caption h1
+  .navbar-nav li
   {
-    font-size: 350%;
-    /* text-transform: uppercase;
-    text-shadow: 1px 1px 15px #000000; */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: auto;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
-  .carousel-caption h3
+  .nav-link
   {
-    font-size: 140%;
-    font-weight: 400;
-    /* text-shadow: 1px 1px 10px #000000; */
-    padding-bottom: 0.2rem;
+    font-size: 0.7em;
   }
 
-  .carousel-caption .btn
+  #cntr
   {
-    font-size: 95%;
-    padding: 8px 14px;
+    /* position: absolute; */
+    top: 50%;
+    /* transform: translateY(-50%); */
   }
 
-  .display-4
+  #cntr h1
   {
-    font-size: 200%;
+    font-size: 100%;
+  }
+  #cntr h3
+  {
+    font-size: 65%;
   }
 
-  .social a
+  #Projects h1
   {
-    font-size: 2.5em;
-    padding: 1.2rem;
+    font-size: 100%;
+    margin-top: -1rem;
+  }
+
+  #prc h3
+  {
+    font-size: 50%;
+  }
+
+  .fa-code, .bi-bootstrap, .fa-css3
+  {
+    font-size: 0.5rem;
+    margin: 0.5rem;
+  }
+  
+  #Contact h2, #Contact a
+  {
+    font-size: 150%;
   }
 }
 @media (max-width: 576px) {
   
+  .carousel-caption img
+  {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 42%;
+    object-fit: cover;
+  }
+
   .carousel-caption
   {
     top: 40%;
   }
-
+  
   .carousel-caption h1
   {
     font-size: 250%;
     /* text-transform: uppercase;
     text-shadow: 1px 1px 15px #000000; */
   }
-
+  
   .carousel-caption h3
   {
     font-size: 105%;
   }
-
+  
   .carousel-caption .btn
   {
     font-size: 90%;
     padding: 4px 8px;
   }
-
+  
   .carousel-indicators
   {
     display: none;
   }
-
+  
   .display-4
   {
     font-size: 160%;
   }
-
-  .social a
+  
+  #Contact h2, #Contact a
   {
-    font-size: 2em;
-    padding: 0.7rem;
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 400px)
+{
+  .carousel-caption img
+  {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+  }
+
+  .carousel-caption .fa-github
+  {
+    font-size: xx-small;
+  }
+
+  .btn-lg
+  {
+    font-size: x-small;
   }
 }
 
