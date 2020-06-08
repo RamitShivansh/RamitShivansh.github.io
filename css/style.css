@@ -85,6 +85,11 @@ html, body
   object-fit: cover;
 }
 
+#js_icon {
+  width: 1rem;
+  height: 1rem;
+}
+
 #projects
 {
   position: relative;
