@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 html, body
 {
   height: 100%;
