@@ -1,0 +1,115 @@
+
+/* background gradient animation */
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* circles behind image in home-div */
+@keyframes a1 {
+    0% {
+        height: 15rem;
+        width: 15rem;
+    }
+    50% {
+        height: 25rem;
+        width: 25rem;
+    }
+    100% {
+        height: 15rem;
+        width: 15rem;
+    }
+}
+@keyframes a2 {
+    0% {
+        height: 15rem;
+        width: 15rem;
+    }
+    50% {
+        height: 22.5rem;
+        width: 22.5rem;
+    }
+    100% {
+        height: 15rem;
+        width: 15rem;
+    }
+}
+@keyframes a3 {
+    0% {
+        height: 15rem;
+        width: 15rem;
+    }
+    50% {
+        height: 27.5rem;
+        width: 27.5rem;
+    }
+    100% {
+        height: 15rem;
+        width: 15rem;
+    }
+}
+@keyframes a4 {
+    0% {
+        height: 25rem;
+        width: 25rem;
+    }
+    50% {
+        height: 15rem;
+        width: 15rem;
+    }
+    100% {
+        height: 25rem;
+        width: 25rem;
+    }
+}
+@keyframes a5 {
+    0% {
+        height: 22.5rem;
+        width: 22.5rem;
+    }
+    50% {
+        height: 15rem;
+        width: 15rem;
+    }
+    100% {
+        height: 22.5rem;
+        width: 22.5rem;
+    }
+}
+@keyframes a6 {
+    0% {
+        height: 27.5rem;
+        width: 27.5rem;
+    }
+    50% {
+        height: 15rem;
+        width: 15rem;
+    }
+    100% {
+        height: 27.5rem;
+        width: 27.5rem;
+    }
+}
+
+/* animation of name on home-div */
+@keyframes name-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

@@ -1,368 +1,472 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Roboto:wght@500&display=swap');
 
-html, body
-{
-  height: 100%;
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
-  color: #222;
-  /* background: repeating-linear-gradient(135deg, #9CE2C0, #9CE2C0 5px, #D5F7E8 5px, #D5F7E8 11.8px); */
-
-  /* background-image: url("../img/bg.jpg"); */
+html {
+    scroll-behavior: smooth;
 }
 
-#name
-{
-  font-family: 'Dancing Script', cursive;
-  font-size: 2rem !important;
-  padding: 0.5rem 1rem !important;
+body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
-.navitems
-{
-  margin: auto;
+a {
+    text-decoration: none;
 }
 
-.navbar
-{
-  padding: 0.8rem;
-  z-index: 24;
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-size: 200% 200%;
+    background-image: linear-gradient(-45deg,#5614b0, #dbd65c);
+    animation: gradient 10s ease-in-out infinite;
+    position: fixed;
+    overflow: hidden;
+    z-index: -100;
 }
 
-.navbar-nav li
-{
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.nav-link
-{
-  font-size: 1.1em;
-}
-
-#ev
-{
-  transform: scaleY(-1);
-}
-
-.carousel-inner img
-{
-  width: 100%;
-  height: 100%;
-}
-
-#cntr
-{
-  position: absolute;
-  top: 55%;
-  transform: translateY(-50%);
-}
-
-.carousel-caption h1
-{
-  font-size: 500%;
-  text-shadow: 1px 1px 15px #000000;
-  position: relative !important;
-}
-
-.carousel-caption h3
-{
-  font-size: 200%;
-  font-weight: 500;
-  text-shadow: 1px 1px 10px #000000;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.carousel-caption img
-{
-  width: 40%;
-  height: 40%;
-  object-fit: cover;
-}
-
-#js_icon {
-  width: 1rem;
-  height: 1rem;
-}
-
-#projects
-{
-  position: relative;
-}
-
-.overlay
-{
-  color:#fff;
-  /* background-color: #000000; */
-  position: absolute;
-  z-index:12;
-  /* top:50%; */
-  margin-top: 2rem;
-  bottom: auto;
-  left:0;
-  width:100%;
-  text-align:center;
-}
-
-.padding
-{
-  padding-bottom: 2rem;
-}
-
-.icdiv
-{
-  margin: auto;
-  text-align: center;
-  justify-content: center;
-}
-
-.fa-code, .bi-bootstrap, .fa-css3
-{
-  font-size: 2em;
-  margin: 1em;
-}
-
-.social a
-{
-  font-size: 4.5em;
-  padding: 3rem;
-}
-
-.fa-linkedin
-{
-  color: #2867B2;
-}
-.fa-at
-{
-  color: #800000;
-}
-.fa-github
-{
-  color: #211f1f;
-}
-
-.fa-linkedin:hover, .fa-at:hover, .fa-github:hover
-{
-  color: #d5d5d5;
-}
-
-/*---Media Queries --*/
-@media (max-width: 992px) {
-  .social a
-  {
-    font-size: 4em;
-    padding: 2rem;
-  }
-}
-@media (max-width: 768px) {
-  #name
-  {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.25rem !important;
-    padding: 0.1rem 0.5rem !important;
-  }
-
-  .navbar-nav li
-  {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  .nav-link
-  {
-    font-size: 0.7em;
-  }
-
-  #cntr
-  {
-    /* position: absolute; */
+/* the left bar */
+.contact-bar {
+    position: fixed;
     top: 50%;
-    /* transform: translateY(-50%); */
-  }
-
-  #cntr h1
-  {
-    font-size: 100%;
-  }
-  #cntr h3
-  {
-    font-size: 65%;
-  }
-
-  #Projects h1
-  {
-    font-size: 100%;
-    margin-top: -1rem;
-  }
-
-  #prc h3
-  {
-    font-size: 50%;
-  }
-
-  .fa-code, .bi-bootstrap, .fa-css3
-  {
-    font-size: 0.5rem;
-    margin: 0.5rem;
-  }
-  
-  #Contact h2, #Contact a
-  {
-    font-size: 150%;
-  }
+    /* left: 5%; */
+    transform: translateY(-50%);
+    z-index: 100;
 }
-@media (max-width: 576px) {
-  
-  .carousel-caption img
-  {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 35%;
-    height: 42%;
-    object-fit: cover;
-  }
 
-  .carousel-caption
-  {
-    top: 40%;
-  }
-  
-  .carousel-caption h1
-  {
-    font-size: 250%;
-    /* text-transform: uppercase;
-    text-shadow: 1px 1px 15px #000000; */
-  }
-  
-  .carousel-caption h3
-  {
-    font-size: 105%;
-  }
-  
-  .carousel-caption .btn
-  {
-    font-size: 90%;
-    padding: 4px 8px;
-  }
-  
-  .carousel-indicators
-  {
+.contact-button {
+    z-index: 100;
+    display: flex;
+    width: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.25s ease-in;
+    margin: 1rem;
+}
+.contact-button:hover {
+    cursor: pointer;
+    padding: 0.15rem;
+    border-radius: 25px;
+    background-color: #EEE;
+    color: #212121;
+    border: 0.05rem solid #000;
+}
+
+#github:hover {
+    width: 4.5rem;
+}
+#linkedin:hover {
+    width: 5rem;
+    /* NICE */
+}
+#mail:hover {
+    width: 4.25rem;
+}
+#facebook:hover {
+    width: 5.5rem;
+}
+#resume:hover {
+    width: 5rem;
+}
+
+.contact-button img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    transition: all 0.25s linear;
+}
+
+.contact-button p {
     display: none;
-  }
-  
-  .display-4
-  {
-    font-size: 160%;
-  }
-  
-  #Contact h2, #Contact a
-  {
-    font-size: 100%;
-  }
+    margin: auto 0.25rem;
+    font-size: x-small;    
+}
+.contact-button:hover p {
+    display: flex;
+}
+.contact-button:hover img {
+    transform: rotate(360deg);
 }
 
-@media (max-width: 400px)
-{
-  .carousel-caption img
-  {
+/* the right bar */
+
+.navbar {
+    position: fixed;
+    bottom: 50%;
+    right: 0;
+    transform: translateY(50%);
+    z-index: 100;
+}
+
+.nav-button {
+    z-index: 100;
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button img {
+    height: 1.5rem;
+    width: 1.5rem;
+    object-fit: cover;
+    display: flex;
+    transition: all 0.25s linear;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    padding: 0.15rem;
+    border-radius: 25px;
+    background-color: #EEE;
+    color: #212121;
+    border: 0.05rem solid #000;
+}
+
+.nav-layover {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    bottom: inherit;
+    transform: translateY(50%);
+    left: inherit;
+    width: 100vw;
+    height: 100vh;
+    color: #FFF;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-layover h1 {
     position: absolute;
-    top: 15%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home:hover ~ #home-overlay {
+    opacity: 1;
+    /* pointer-events: none; */
+}
+#about:hover ~ #about-overlay {
+    opacity: 1;
+    /* pointer-events: none; */
+}
+#projects:hover ~ #projects-overlay {
+    opacity: 1;
+    /* pointer-events: none; */
+}
+#skills:hover ~ #skills-overlay {
+    opacity: 1;
+    /* pointer-events: none; */
+}
+#contact:hover ~ #contact-overlay {
+    opacity: 1;
+    /* pointer-events: none; */
+}
+
+/* main-content */
+
+/* the containers of different parts */
+.container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 55;
+    position: relative;
+    border-top: 1px solid #000;
+}
+.container h1 {
+    font-size: 400%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0;
+}
+
+/* home-div */
+
+/* image on home-div */
+#home-div img {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30%;
-    height: 30%;
-    object-fit: cover;
-  }
-
-  .carousel-caption .fa-github
-  {
-    font-size: xx-small;
-  }
-
-  .btn-lg
-  {
-    font-size: x-small;
-  }
+    z-index: 57;
 }
 
+/* concentric circles behind image in home-div */
+.float {
+    border-radius: 50%;
+    opacity: 0.1;
+    position: absolute;
+    background-color: #FFF;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
+#c1 {
+    animation: a1 10s cubic-bezier(.8, 0, .2, 1) infinite;
 }
-/*--- Fixed Background Image --*/
-figure {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  margin: 0!important;
+#c2 {
+    animation: a2 10s cubic-bezier(.8, 0, .2, 1) infinite;
 }
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+#c3 {
+    animation: a3 10s cubic-bezier(.8, 0, .2, 1) infinite;
 }
-#fixed {
-  background-image: url('img/mac.png');
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
+#c4 {
+    animation: a4 10s cubic-bezier(.8, 0, .2, 1) infinite;
 }
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
+#c5 {
+    animation: a5 10s cubic-bezier(.8, 0, .2, 1) infinite;
+}
+#c6 {
+    animation: a6 10s cubic-bezier(.8, 0, .2, 1) infinite;
+}
+
+/* Name below image */
+.name-div {
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.name-div:hover {
+    cursor: default;
+}
+
+.name {
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+    margin: auto 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 400%;
+}
+
+.name:hover {
+    color: #EEE;
+    background-image: linear-gradient();
+    font-size: 450%;
+    cursor: default;
+    animation: name-anim 0.2s ease-in-out 1;
+}
+
+#T {
+    margin-right: 0.5rem;
+}
+#A2 {
+    margin-left: -0.3rem;
+}
+
+/* about-div */
+
+.content {
+    position: absolute;
+    width: 85%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     padding: 1rem;
 }
 
+.content p {
+    font-size: xx-large;
+    text-align: justify;
+    line-height: 2rem;
+    cursor: default;
+    /* color: #FFF ; */
+}
+
+.bold-hover {
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+.bold-hover:hover {
+    color: #FFF;
+}
+
+/* projects-div */
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+    width: 10rem;
+    height: 10rem;
+    margin: 0.25rem 0.25rem;
+    position: relative;
+    color: #EEE;
+}
+
+.card h3 {
+    pointer-events: none;
+    text-align: center;
+    vertical-align: center;
+}
+
+.card .info {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+    overflow: hidden;
+    font-size: 0;
+    color: #212121;
+    text-align: justify;
+    height: 70%;
+}
+
+.card .info img {
+    width: 0;
+    height: 0;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.card .info .buttons {
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.card .info .button {
+    width: 20px;
+    height: 20px;
+    margin: 0 1rem;
+}
+.card .info .button img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+/* .card {
+    background-color: #EEE;
+    width: 15rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+    box-shadow: none;
+    
+} */
+
+.card:hover {
+    /* border-radius: 0.25rem; */
+    box-shadow: inset;
+    width: 20rem;
+    height: 25rem;
+    background-image: none;
+    background-color: #EEE;
+    color: #212121;
+    border: 0px;
+    box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+}
+
+.card:hover .info {
+    width: 90%;
+    height: 80%;
+    font-size: small;
+}
+
+.card:hover img {
+    width: 100%;
+    height: 40%;
+    transition: all 0.5s ease-in-out;
+}
+
+.card .info .button {
+    pointer-events: all;
+}
+
+.horizontal {
+    height: 25rem;
+}
+.vertical {
+    width: 20rem;
+}
 
 
 
+/* skills-div */
 
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
+/* .skill-card {
+    height: 5rem;
+} */
 
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+.skill-card .info{
+    top: 25%;
+    height: 65%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
 
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+/* .skill-card:hover {
+    width: 20rem;
+    height: 15rem;
+} */
 
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+.skill-card:hover .info {
+    width: 90%;
+    height: 70%;
+    font-size: small;
+}
 
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
+.skill-card:hover img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+    justify-self: center;
+}
 
+.skill-card .info .item {
+    text-align: center;
+}
 
-
-
-
-
-
-
+#web-dev .info {
+    grid-template-columns: auto auto auto;
+}
+#ml .info {
+    grid-template-columns: auto;
+}
