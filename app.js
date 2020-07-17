@@ -2,6 +2,9 @@ var projects = document.getElementsByClassName("project-card");
 var skills = document.getElementsByClassName("skill-card");
 var dontClose = false;
 
+// var projectsDiv = document.getElementById('projects-div');
+// var skillsDiv = document.getElementById('skills-div');
+
 var buttons = document.getElementsByClassName("button");
 
 for (var i = 0; i < buttons.length; i++) {
@@ -38,6 +41,8 @@ function hoverStart(e) {
       }
     }
   }
+
+  // $('html, body').animate({ scrollTop: $('#projects-div').offset().top }, 'fast');
 
   if ((j + 1) % rowLen != 0) {
     projects[j + 1].classList.add("horizontal");
@@ -121,6 +126,9 @@ function skillHoverStart(e) {
       break;
     }
   }
+
+  
+  // $('html, body').animate({ scrollTop: $('#skills-div').offset().top }, 'fast');
 
   if ((j + 1) % rowLen != 0) {
     skills[j + 1].classList.add("horizontal");

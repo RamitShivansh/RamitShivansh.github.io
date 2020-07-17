@@ -165,8 +165,8 @@
 
     .content {
         width: 90%;
-        height: 70%;
-        top: 60%;
+        height: auto;
+        top: 55%;
         padding: 0.5rem;
     }
 
@@ -181,6 +181,17 @@
     .container h1 {
         font-size: 200%;
         top: 10%;
+    }
+
+    /* about-div */
+
+    .content {
+        top: 55%;
+        padding: 0.25rem;
+    }
+
+    .content p {
+        font-size: medium;
     }
 
     /* projects-div */
@@ -204,20 +215,21 @@
 
     .card:hover {
         width: 15rem;
-        height: 20rem;
+        height: 25rem;
     }
 
     .card:hover .info {
         width: 90%;
-        height: 80%;
+        height: 70%;
+        top: 20%;
         font-size: x-small;
     }
 
     .not-in-focus {
-        height: 2rem;
+        height: 1.5rem;
     }
     .not-in-focus h3 {
-        font-size: small;
+        font-size: x-small;
         margin: 0.3rem 0;
     }
     .not-in-focus #prog-lang-h3 {
@@ -228,23 +240,15 @@
 @media(max-width: 400px) {
 
     .content {
-        top: 60%;
+        top: 55%;
     }
 
     .content p {
-        font-size: large;
-        text-align: center;
+        font-size: small;
+        line-height: 2.5rem;
     }
 }
 @media(max-width: 350px) {
-
-    .content {
-        top: 60%;
-    }
-
-    .content p {
-        font-size: medium;
-    }
 
     .contact-button {
         width: 1.25rem;
