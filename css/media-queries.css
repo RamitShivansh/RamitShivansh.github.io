@@ -247,6 +247,11 @@
         font-size: small;
         line-height: 2.5rem;
     }
+
+    .card:hover {
+        width: 14rem;
+        height: 22rem;
+    }
 }
 @media(max-width: 350px) {
 
