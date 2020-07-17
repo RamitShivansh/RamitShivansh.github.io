@@ -12,6 +12,128 @@
     }
 }
 
+/* clouds animations */
+
+@keyframes cl1 {
+    0% {
+        left: 10%;
+    }
+    25% {
+        left: 12%;
+    }
+    50% {
+        left: 10%;
+    }
+    75% {
+        left: 8%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+@keyframes cl2 {
+    0% {
+        left: 65%;
+    }
+    25% {
+        left: 69%;
+    }
+    50% {
+        left: 65%;
+    }
+    75% {
+        left: 61%;
+    }
+    100% {
+        left: 65%;
+    }
+}
+@keyframes cl3 {
+    0% {
+        left: 40%;
+    }
+    25% {
+        left: 41%;
+    }
+    50% {
+        left: 40%;
+    }
+    75% {
+        left: 39%;
+    }
+    100% {
+        left: 40%;
+    }
+}
+@keyframes cl4 {
+    0% {
+        left: 90%;
+    }
+    25% {
+        left: 95%;
+    }
+    50% {
+        left: 90%;
+    }
+    75% {
+        left: 85%;
+    }
+    100% {
+        left: 90%;
+    }
+}
+@keyframes cl5 {
+    0% {
+        left: 15%;
+    }
+    25% {
+        left: 22%;
+    }
+    50% {
+        left: 15%;
+    }
+    75% {
+        left: 8%;
+    }
+    100% {
+        left: 15%;
+    }
+}
+@keyframes cl6 {
+    0% {
+        left: 80%;
+    }
+    25% {
+        left: 85%;
+    }
+    50% {
+        left: 80%;
+    }
+    75% {
+        left: 75%;
+    }
+    100% {
+        left: 80%;
+    }
+}
+@keyframes cl7 {
+    0% {
+        left: 25%;
+    }
+    25% {
+        left: 22%;
+    }
+    50% {
+        left: 25%;
+    }
+    75% {
+        left: 28%;
+    }
+    100% {
+        left: 25%;
+    }
+}
+
 /* circles behind image in home-div */
 @keyframes a1 {
     0% {

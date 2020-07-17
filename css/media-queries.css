@@ -10,6 +10,30 @@
 
 @media(max-width: 768px) {
 
+    /* background clouds */
+
+    #cloud1 {
+        animation-duration: 9s;
+    }
+    #cloud2 {
+        animation-duration: 5s;
+    }
+    #cloud3 {
+        animation-duration: 3s;
+    }
+    #cloud4 {
+        animation-duration: 12s;
+    }
+    #cloud5 {
+        animation-duration: 15s;
+    }
+    #cloud6 {
+        animation-duration: 16s;
+    }
+    #cloud7 {
+        animation-duration: 10s;
+    }
+
     /* contact bar */
 
     .contact-bar {
@@ -177,6 +201,29 @@
 }
 
 @media(max-width: 500px) {
+
+    #cloud1 {
+        animation-duration: 4s;
+    }
+    #cloud2 {
+        animation-duration: 5s;
+    }
+    #cloud3 {
+        animation-duration: 1.5s;
+    }
+    #cloud4 {
+        animation-duration: 6s;
+    }
+    #cloud5 {
+        animation-duration: 7s;
+    }
+    #cloud6 {
+        animation-duration: 8s;
+    }
+    #cloud7 {
+        animation-duration: 4s;
+    }
+
 
     .container h1 {
         font-size: 200%;

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -10,7 +11,8 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'IBM Plex Serif', serif;
     overflow-x: hidden;
 }
 
@@ -18,15 +20,63 @@ a {
     text-decoration: none;
 }
 
+/* background */
+
 .background {
     width: 100vw;
     height: 100vh;
     background-size: 200% 200%;
-    background-image: linear-gradient(-45deg, rgb(198, 255, 221), rgb(251, 215, 134), rgb(247, 121, 125));
+    /* background-image: linear-gradient(-45deg, rgb(198, 255, 221), rgb(251, 215, 134), rgb(247, 121, 125)); */
+    background-image: linear-gradient(-45deg, rgb(255, 212, 112), rgb(247, 121, 125));
     animation: gradient 10s ease-in-out infinite;
     position: fixed;
     overflow: hidden;
     z-index: -100;
+}
+
+.cloud {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    position: absolute;
+    opacity: 0.2;
+    /* color: #000; */
+}
+
+#cloud1 {
+    top: 5%;
+    left: 10%;
+    animation: cl1 12s linear infinite;
+}
+#cloud2 {
+    top: 45%;
+    left: 60%;
+    animation: cl2 15s linear infinite;
+}
+#cloud3 {
+    top: 70%;
+    left: 40%;
+    animation: cl3 6s linear infinite;
+}
+#cloud4 {
+    top: 75%;
+    left: 90%;
+    animation: cl4 16s linear infinite;
+}
+#cloud5 {
+    top: 80%;
+    left: 15%;
+    animation: cl5 19s linear infinite;
+}
+#cloud6 {
+    top: 8%;
+    left: 80%;
+    animation: cl6 20s linear infinite;
+}
+#cloud7 {
+    top: 40%;
+    left: 25%;
+    animation: cl7 14s linear infinite;
 }
 
 /* the left bar */
@@ -212,6 +262,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 57;
+    transition: all 0.25s ease-in-out;
 }
 
 /* concentric circles behind image in home-div */
@@ -264,8 +315,7 @@ a {
     transition: all 0.2s ease-in-out;
     align-items: center;
     margin: auto 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 400%;
     color: #212121;
 }
@@ -301,7 +351,8 @@ a {
     text-align: justify;
     line-height: 3.5rem;
     cursor: default;
-    /* color: #FFF ; */
+    font-weight: 300;
+    color: #000 ;
 }
 
 /* projects-div */
@@ -325,6 +376,8 @@ a {
     position: relative;
     color: #EEE;
     box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.3);
+    font-weight: 200;
+    font-style: oblique;
 }
 
 .card h3 {
@@ -392,11 +445,17 @@ a {
     width: 22.5rem;
     height: 27.5rem;
     background-image: none;
-    background-color: #EEE;
+    background-color: #EEE !important;
     color: #212121;
     border: 0px;
     box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.3);
     justify-content: center;
+    font-weight: 300;
+}
+
+.card:hover h3 {
+    font-weight: 500;
+    font-style: normal;
 }
 
 .card:hover .info {
@@ -421,6 +480,7 @@ a {
 .vertical {
     width: 22.5rem;
 }
+
 
 
 
